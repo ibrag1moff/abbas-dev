@@ -25,13 +25,14 @@ export default function Skills() {
       <Tabs>
         <TabList className="flex flex-col xs:flex-row justify-center items-center gap-1 mb-8 xs:mb-3 w-full">
           <Tab className="flex items-center justify-center gap-1 py-2 px-3 outline-none font-medium border min-w-[300px]">
-            <SiTypescript size={15} />
-            Software
-          </Tab>
-          <Tab className="flex items-center justify-center gap-1 py-2 px-3 outline-none font-medium border min-w-[300px]">
             <MdOutlineDesignServices size={15} />
             Services
           </Tab>
+          <Tab className="flex items-center justify-center gap-1 py-2 px-3 outline-none font-medium border min-w-[300px]">
+            <SiTypescript size={15} />
+            Software
+          </Tab>
+
           <Tab className="flex items-center justify-center gap-1 py-2 px-3 outline-none font-medium border min-w-[300px]">
             <MdLanguage size={15} />
             Languages
@@ -40,7 +41,7 @@ export default function Skills() {
 
         <TabPanel>
           <div className="flex flex-col gap-2">
-            {softwareSkills.map((skill) => (
+            {servicesSkills.map((skill) => (
               <div
                 className="flex items-center justify-center gap-1 border py-2 px-3"
                 key={skill.id}
@@ -55,7 +56,7 @@ export default function Skills() {
         </TabPanel>
         <TabPanel>
           <div className="flex flex-col gap-2">
-            {servicesSkills.map((skill) => (
+            {softwareSkills.map((skill) => (
               <div
                 className="flex items-center justify-center gap-1 border py-2 px-3"
                 key={skill.id}
